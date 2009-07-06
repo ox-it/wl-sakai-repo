@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="git-repo"
+           fetch="git://git-repo.oucs.ox.ac.uk/"/>
+           
+  <default revision="master"
+           remote="git-repo" />
+  <!--
+  <project path="build" name="platform/build">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="kernel"
+           name="kernel/common"
+           revision="refs/heads/android-2.6.27" />
+   -->
+</manifest>
