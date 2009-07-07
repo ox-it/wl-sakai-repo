@@ -57,6 +57,8 @@
 <project name="sakai-mock"/>
 <project name="sakai">
    <copyfile src="pom.xml" dest="pom.xml"/>
+   <copyfile src="kernel-deploy/pom.xml" dest="kernel-deploy/pom.xml"/>
+   <copyfile src="pack-demo/pom.xml" dest="pack-demo/pom.xml"/>
 </project>
 <project name="sam"/>
 <project name="samples"/>
