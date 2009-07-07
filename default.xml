@@ -55,6 +55,9 @@
 <project name="roster"/>
 <project name="rwiki"/>
 <project name="sakai-mock"/>
+<project name="sakai">
+   <copyfile src="pom.xml" dest="pom.xml"/>
+</project>
 <project name="sam"/>
 <project name="samples"/>
 <project name="search"/>
