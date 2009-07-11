@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="git-repo"
+           fetch="git://git-repo.oucs.ox.ac.uk/git/repos/mirror/sakai"/>
+           
+  <default revision="sakai_2-5-x"
+           remote="git-repo" />
+<project name="access"/>
+<project name="alias"/>
+<project name="announcement"/>
+<project name="archive"/>
+<project name="assignment"/>
+<project name="authz"/>
+<project name="blog"/>
+<project name="calendar"/>
+<project name="chat"/>
+<project name="citations"/>
+<project name="cluster"/>
+<project name="component"/>
+<project name="content"/>
+<project name="content-review"/>
+<project name="courier"/>
+<project name="course-management"/>
+<project name="dav"/>
+<project name="db"/>
+<project name="email"/>
+<project name="entity"/>
+<project name="entitybroker"/>
+<project name="event"/>
+<project name="gradebook"/>
+<project name="help"/>
+<project name="jcr"/>
+<project name="jobscheduler"/>
+<project name="jsf"/>
+<project name="linktool"/>
+<project name="login"/>
+<project name="mailarchive"/>
+<project name="master"/>
+<project name="memory"/>
+<project name="message"/>
+<project name="metaobj"/>
+<project name="msgcntr"/>
+<project name="osp"/>
+<project name="podcasts"/>
+<project name="portal"/>
+<project name="postem"/>
+<project name="presence"/>
+<project name="presentation"/>
+<project name="privacy"/>
+<project name="profile"/>
+<project name="providers"/>
+<project name="reference"/>
+<project name="reports"/>
+<project name="reset-pass"/>
+<project name="rights"/>
+<project name="roster"/>
+<project name="rwiki"/>
+<project name="sakai-mock"/>
+<project name="sam"/>
+<project name="samples"/>
+<project name="search"/>
+<project name="sections"/>
+<project name="site"/>
+<project name="site-manage"/>
+<project name="syllabus"/>
+<project name="test-harness"/>
+<project name="textarea"/>
+<project name="tool"/>
+<project name="user"/>
+<project name="util"/>
+<project name="velocity"/>
+<project name="warehouse"/>
+<project name="web"/>
+<project name="webservices"/>
+<project name="mailtool"/>
+<project name="usermembership"/>
+<project name="polls"/>
+<project name="sakai">
+   <copyfile src="pom.xml" dest="pom.xml"/>
+   <copyfile src="pack-demo/pom.xml" dest="pack-demo/pom.xml"/>
+</project>
+</manifest>
