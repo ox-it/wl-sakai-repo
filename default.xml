@@ -58,6 +58,8 @@
 <project name="sakai">
    <copyfile src="pom.xml" dest="pom.xml"/>
    <copyfile src="kernel-deploy/pom.xml" dest="kernel-deploy/pom.xml"/>
+   <copyfile src="framework-deploy/pom.xml" dest="framework-deploy/pom.xml"/>
+   <copyfile src="core-deploy/pom.xml" dest="core-deploy/pom.xml"/>
    <copyfile src="pack-demo/pom.xml" dest="pack-demo/pom.xml"/>
 </project>
 <project name="sam"/>
