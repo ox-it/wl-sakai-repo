@@ -45,7 +45,6 @@
 <project name="postem"/>
 <project name="presence"/>
 <project name="presentation"/>
-<project name="privacy"/>
 <project name="profile"/>
 <project name="providers"/>
 <project name="reference"/>
