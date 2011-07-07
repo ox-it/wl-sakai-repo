@@ -60,7 +60,6 @@
    <copyfile src="framework-deploy/pom.xml" dest="framework-deploy/pom.xml"/>
    <copyfile src="jstl-shared-deploy/pom.xml" dest="jstl-shared-deploy/pom.xml"/>
    <copyfile src="core-deploy/pom.xml" dest="core-deploy/pom.xml"/>
-   <copyfile src="pack-demo/pom.xml" dest="pack-demo/pom.xml"/>
 </project>
 <project name="sam"/>
 <project name="samples"/>
