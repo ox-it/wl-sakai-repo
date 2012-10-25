@@ -1,82 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="git-repo"
-           fetch="git://git-repo.oucs.ox.ac.uk/git/repos/mirror/sakai"/>
+  <remote  name="ox-it"
+           fetch="git@github.com:ox-it/"/>
            
   <default revision="master"
-           remote="git-repo" />
+           remote="ox-it" />
 
-<project name="access"/>
-<project name="alias"/>
-<project name="announcement"/>
-<project name="archive"/>
-<project name="assignment"/>
-<project name="authz"/>
-<project name="blog"/>
-<project name="calendar"/>
-<project name="chat"/>
-<project name="citations"/>
-<project name="common"/>
-<project name="config"/>
-<project name="content"/>
-<project name="content-review"/>
-<project name="courier"/>
-<project name="course-management"/>
-<project name="dav"/>
-<project name="emailtemplateservice"/>
-<project name="entitybroker"/>
-<project name="gradebook"/>
-<project name="help"/>
-<project name="jobscheduler"/>
-<project name="jsf"/>
-<project name="linktool"/>
-<project name="login"/>
-<project name="mailarchive"/>
-<project name="mailtool"/>
-<project name="master"/>
-<project name="memory"/>
-<project name="message"/>
-<project name="metaobj"/>
-<project name="msgcntr"/>
-<project name="osp"/>
-<project name="podcasts"/>
-<project name="polls"/>
-<project name="portal"/>
-<project name="postem"/>
-<project name="presence"/>
-<project name="presentation"/>
-<project name="profile"/>
-<project name="providers"/>
-<project name="reference"/>
-<project name="reports"/>
-<project name="reset-pass"/>
-<project name="rights"/>
-<project name="roster"/>
-<project name="rwiki"/>
-<project name="sakai-mock"/>
-<project name="sakai">
+<project name="wl-access.git" path="access"/>
+<project name="wl-sakai.git" path="sakai">
    <copyfile src="pom.xml" dest="pom.xml"/>
    <copyfile src="kernel-deploy/pom.xml" dest="kernel-deploy/pom.xml"/>
    <copyfile src="framework-deploy/pom.xml" dest="framework-deploy/pom.xml"/>
    <copyfile src="jstl-shared-deploy/pom.xml" dest="jstl-shared-deploy/pom.xml"/>
    <copyfile src="core-deploy/pom.xml" dest="core-deploy/pom.xml"/>
 </project>
-<project name="sam"/>
-<project name="samples"/>
-<project name="search"/>
-<project name="sections"/>
-<project name="site"/>
-<project name="site-manage"/>
-<project name="syllabus"/>
-<project name="taggable"/>
-<project name="test-harness"/>
-<project name="textarea"/>
-<project name="tool"/>
-<project name="user"/>
-<project name="usermembership"/>
-<project name="velocity"/>
-<project name="warehouse"/>
-<project name="was"/>
-<project name="web"/>
-<project name="webservices"/>
 </manifest>
