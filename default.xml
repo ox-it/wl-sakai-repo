@@ -1,17 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="ox-it"
-           fetch="git@github.com:ox-it/"/>
+           fetch="ssh://git@github.com/ox-it"/>
+           
+  <remote  name="sakai-mirror"
+           fetch="git://github.com/sakai-mirror"/>
            
   <default revision="master"
            remote="ox-it" />
 
-<project name="wl-access.git" path="access"/>
 <project name="wl-sakai.git" path="sakai">
-   <copyfile src="pom.xml" dest="pom.xml"/>
-   <copyfile src="kernel-deploy/pom.xml" dest="kernel-deploy/pom.xml"/>
-   <copyfile src="framework-deploy/pom.xml" dest="framework-deploy/pom.xml"/>
-   <copyfile src="jstl-shared-deploy/pom.xml" dest="jstl-shared-deploy/pom.xml"/>
-   <copyfile src="core-deploy/pom.xml" dest="core-deploy/pom.xml"/>
+    <copyfile src="pom.xml" dest="pom.xml"/>
+    <copyfile src="kernel-deploy/pom.xml" dest="kernel-deploy/pom.xml"/>
+    <copyfile src="framework-shared-deploy/pom.xml" dest="framework-shared-deploy/pom.xml"/>
+    <copyfile src="jstl-shared-deploy/pom.xml" dest="jstl-shared-deploy/pom.xml"/>
+    <copyfile src="core-deploy/pom.xml" dest="core-deploy/pom.xml"/>
+    <copyfile src="extras/oxford/pom.xml" dest="extras/oxford/pom.xml"/>
+    <copyfile src="extras/oxford-deploy/pom.xml" dest="extras/oxford-deploy/pom.xml"/>
 </project>
+<project name="wl-access.git" path="access" revision="sakai-2.8.x"/>
+<project name="alias.git" path="alias" remote="sakai-mirror" revision="5a5bc4b8086d9ebcf01927484b76108aa98d7571" />
+<project name="wl-announcement.git" path="announcement" revision="sakai-2.8.x"/>
+<project name="archive.git" path="archive" remote="sakai-mirror" revision="a0c6f0003a8bd316d1ec52aa75cafc9fc0dff3ce" />
+<project name="wl-assignment.git" path="assignment" revision="sakai-2.8.x"/>
+<project name="wl-authz.git" path="authz" revision="sakai-2.8.x"/>
+<project name="wl-blog.git" path="blog" revision="sakai_2-6-x"/>
+<project name="wl-calendar.git" path="calendar" revision="sakai-2.8.x"/>
+<project name="chat.git" path="chat" remote="sakai-mirror" revision="460eab767ca980aa69c43cfa3358ed36dfd63948" />
+<project name="wl-citations.git" path="citations" revision="sakai-2.8.x"/>
+<project name="wl-config.git" path="config" revision="sakai-2.8.x"/>
+<project name="wl-content.git" path="content" revision="sakai-2.8.x"/>
+<project name="courier.git" path="courier" remote="sakai-mirror" revision="eabe6e52cd2f59f607adbb9f1052f10377d924e7" />
+<project name="wl-dav.git" path="dav" revision="sakai-2.8.x"/>
+<project name="wl-ambrosia.git" path="extras/ambrosia" revision="1.2m2"/>
+<project name="wl-content-sync.git" path="extras/content-sync" revision="master"/>
+<project name="wl-course-signup" path="extras/course-signup" revision="master"/>
+<project name="wl-etudes-util.git" path="extras/etudes-util" revision="master"/>
+<project name="wl-evaluation.git" path="extras/evaluation" revision="1.3.x"/>
+<project name="wl-external-groups" path="extras/external-groups" revision="master"/>
+<project name="wl-hierarchy.git" path="extras/hierarchy" revision="sakai_2-6-x"/>
+<project name="melete.git" path="extras/melete" remote="sakai-mirror" revision="07c010766c08cec8e298fa3a069a425722cd9b35" />
+<project name="wl-mneme.git" path="extras/mneme" revision="1.2"/>
+<project name="wl-oxam.git" path="extras/oxam" revision="master"/>
+<project name="wl-oxford-url-shortener.git" path="extras/oxford-url-shortener" revision="master"/>
+<project name="simple-signup-entityprovider.git" path="extras/simple-signup-entityprovider" remote="sakai-mirror" revision="0232518e4967bf51eb67f5f1c5c3107d1a29313f" />
+<project name="wl-sirlouie" path="extras/sirlouie" revision="master"/>
+<project name="wl-tetraelf-hierarchy" path="extras/tetraelf-hierarchy" revision="master"/>
+<project name="wl-turnitin.git" path="extras/turnitin" revision="master"/>
+<project name="wl-gradebook.git" path="gradebook" revision="master"/>
+<project name="wl-help.git" path="help" revision="sakai-2.8.x"/>
+<project name="wl-assignment2.git" path="indie/assignment2" revision="1.1ox1"/>
+<project name="wl-basiclti.git" path="indie/basiclti" revision="basiclti-1.3.x"/>
+<project name="wl-common.git" path="indie/common" revision="common-1.1.x"/>
+<project name="wl-entitybroker.git" path="indie/entitybroker" revision="entitybroker-1.4.x"/>
+<project name="wl-kernel.git" path="indie/kernel" revision="kernel-1.2.x"/>
+<project name="wl-local-skins" path="indie/local-skins" revision="master"/>
+<project name="wl-mailsender.git" path="indie/mailsender" revision="1.6"/>
+<project name="wl-member-profile-provider" path="indie/member-profile-provider" revision="master"/>
+<project name="wl-msgcntr.git" path="indie/msgcntr" revision="msgcntr-2.8.x"/>
+<project name="wl-polls.git" path="indie/polls" revision="polls-1.4.x"/>
+<project name="wl-profile2.git" path="indie/profile2" revision="profile2-1.4.x"/>
+<project name="wl-reset-pass.git" path="indie/reset-pass" revision="reset-pass-2.8.x"/>
+<project name="wl-sakai-feeds.git" path="indie/sakai-feeds" revision="master"/>
+<project name="wl-shortenedurl.git" path="indie/shortenedurl" revision="master"/>
+<project name="wl-signup.git" path="indie/signup" revision="master"/>
+<project name="wl-jobscheduler.git" path="jobscheduler" revision="jobscheduler-2.8.x"/>
+<project name="wl-login.git" path="login" revision="sakai-2.8.x"/>
+<project name="wl-mailarchive.git" path="mailarchive" revision="sakai-2.8.x"/>
+<project name="wl-master.git" path="master" revision="sakai-2.8.x"/>
+<project name="memory.git" path="memory" remote="sakai-mirror" revision="b8ff52006e87e42f75d38d2a59c9b349591d675f" />
+<project name="message.git" path="message" remote="sakai-mirror" revision="e75b9cbb2fe028b22a0af934c641d24ec1c32546" />
+<project name="metaobj.git" path="metaobj" remote="sakai-mirror" revision="ab8ee8c5e69dce5a2faa029e3eea2007d9519cdd" />
+<project name="wl-podcasts.git" path="podcasts" revision="sakai-2.8.x"/>
+<project name="wl-portal.git" path="portal" revision="sakai-2.8.x"/>
+<project name="postem.git" path="postem" remote="sakai-mirror" revision="39ac3a7003094ddd1f4303e5750335087a53e1b4" />
+<project name="presence.git" path="presence" remote="sakai-mirror" revision="15cfc85870b42df2fe4cb8ccdda151e73d54ca0b" />
+<project name="presentation.git" path="presentation" remote="sakai-mirror" revision="c1cbb99db1c1138e0ddf37d98f6506624b921090" />
+<project name="privacy.git" path="privacy" remote="sakai-mirror" revision="f69f80a46d8b7f736b51184d1c5ca2f84ca612f3" />
+<project name="wl-providers.git" path="providers" revision="sakai-2.8.x"/>
+<project name="wl-reference.git" path="reference" revision="sakai-2.8.x"/>
+<project name="reports.git" path="reports" remote="sakai-mirror" revision="de441fde4e42db1a8739b17ec927841d95f8b2e7" />
+<project name="rights.git" path="rights" remote="sakai-mirror" revision="4a757da92f04d79d6b7fc4c0ca987868640596a8" />
+<project name="wl-roster.git" path="roster" revision="sakai-2.8.x"/>
+<project name="wl-rwiki.git" path="rwiki" revision="sakai-2.8.x"/>
+<project name="wl-sakai-mock.git" path="sakai-mock" revision="sakai_2-6-x"/>
+<project name="wl-sam.git" path="sam" revision="samigo-2.8.x"/>
+<project name="samples.git" path="samples" remote="sakai-mirror" revision="bd3244403ee0cfead2e5d902050d2ebe88a0d63e" />
+<project name="wl-search.git" path="search" revision="search-1.3.x"/>
+<project name="sections.git" path="sections" remote="sakai-mirror" revision="91d6fde98dfa62bd61ea3879a822a8ee7b7ae076" />
+<project name="wl-site.git" path="site" revision="sakai-2.8.x"/>
+<project name="wl-site-manage.git" path="site-manage" revision="sakai-2.8.x"/>
+<project name="wl-syllabus.git" path="syllabus" revision="sakai-2.8.x"/>
+<project name="taggable.git" path="taggable" remote="sakai-mirror" revision="5a4483591cc909aed974cf7b1fc294bf44fcebdc" />
+<project name="test-harness.git" path="test-harness" remote="sakai-mirror" revision="eb2059fc8d7831ce59d9b9a02fdefcef93aad516" />
+<project name="wl-textarea.git" path="textarea" revision="sakai-2.8.x"/>
+<project name="wl-tool.git" path="tool" revision="sakai-2.8.x"/>
+<project name="wl-user.git" path="user" revision="sakai-2.8.x"/>
+<project name="usermembership.git" path="usermembership" remote="sakai-mirror" revision="c4ca01fbc404660fa03d46c83bbf2b9d995ff764" />
+<project name="velocity.git" path="velocity" remote="sakai-mirror" revision="dc4a012bb560b0577939969c1194d97b7aed87ee" />
+<project name="warehouse.git" path="warehouse" remote="sakai-mirror" revision="01b55319bdb179027ef8ccf16a551093c5b85dcc" />
+<project name="wl-web.git" path="web" revision="sakai-2.8.x"/>
+
 </manifest>
