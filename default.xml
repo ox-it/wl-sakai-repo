@@ -19,7 +19,7 @@
     <copyfile src="extras/oxford/pom.xml" dest="extras/oxford/pom.xml"/>
     <copyfile src="extras/oxford-deploy/pom.xml" dest="extras/oxford-deploy/pom.xml"/>
     <copyfile src="pack-build/pom.xml" dest="pack-build/pom.xml"/>
-    <copyfile src="pack-build/src/assembly/tomcat-overlay.xml " dest="pack-build/src/assembly/tomcat-overlay.xml "/>
+    <copyfile src="pack-build/src/assembly/tomcat-overlay.xml " dest="pack-build/src/assembly/tomcat-overlay.xml"/>
 </project>
 <project name="wl-access.git" path="access"/>
 <project name="alias.git" path="alias" remote="sakai-mirror" revision="5a5bc4b8086d9ebcf01927484b76108aa98d7571" />
